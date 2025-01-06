@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rejestracja</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            width: 800px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .lewo, .prawo {
+            padding: 40px;
+        }
+        .lewo {
+            width: 60%;
+        }
+        .prawo {
+            background-color: #f9f9f9;
+            width: 40%;
+            text-align: center;
+        }
+        input[type="text"], input[type="password"], input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            width: 100%;
+            padding: 15px;
+            background-color: #ff6600;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #e65c00;
+        }
+        .checkbox {
+            margin: 20px 0;
+        }
+        .przycisk {
+            background-color: black;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        a {
+            color: #0077cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="lewo">
+            <h1>Dołącz już dziś!</h1>
+            <form action="#" method="post">
+                <label for="email">Email <span style="color:red">(Wymagane)</span></label>
+                <input type="email" id="email" name="email" placeholder="Wpisz email">
+                
+                <label for="password">Hasło <span style="color:red">(Wymagane)</span></label>
+                <input type="password" id="password" name="password" placeholder="Wpisz hasło">
+                <ul>
+                    <li>Hasło musi zawierać co najmniej 8 znaków.</li>
+                    <li>Muszą występować niestandardowe znaki</li>
+                </ul>
+                
+                <label for="confirm-password">Potwierdź hasło <span style="color:red">(Wymagane)</span></label>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="Potwierdź hasło">
+                
+                <div class="checkbox">
+                    <input type="checkbox" id="privacy" required>
+                    <label for="privacy">Przeczytałem i akceptuję <a href="#">Politykę Prywatności</a><span style="color:red"> (Wymagane)</span></label>
+                </div>
+                
+                <button type="submit">Załóż konto</button>
+            </form>
+        </div>
+        <div class="prawo">
+            <h2>Masz już konto?</h2>
+            <p>Jeśli jesteś już członkiem, zaloguj się poniżej!</p>
+            <button class="przycisk">Zaloguj się</button>
+        </div>
+    </div>
+</body>
+</html>
